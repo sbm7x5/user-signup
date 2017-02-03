@@ -100,7 +100,7 @@ class Index(webapp2.RequestHandler):
             error = True
             username_error = "You must enter a username"
     #The user's username is not valid -- for example, contains a space character.
-        if valid_username(username) == None:
+        elif valid_username(username) == None:
             error = True
             uvalid_error = "Your username is not valid"
     # The user's password and password-confirmation do not match
